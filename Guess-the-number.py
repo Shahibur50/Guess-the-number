@@ -18,21 +18,21 @@ class Guess:
         self.r = r
     
     def life(self):
-        if self.r < 30:
+        if self.end - self.start < 30:
             self.lives = 3
-        elif self.r < 125:
+        elif self.end - self.start < 125:
             self.lives = 5
-        elif self.r < 250:
+        elif self.end - self.start < 250:
             self.lives = 7
-        elif self.r < 500:
+        elif self.end - self.start < 500:
             self.lives = 10
-        elif self.r < 1000:
+        elif self.end - self.start < 1000:
             self.lives = 13
-        elif self.r < 2500:
+        elif self.end - self.start < 2500:
             self.lives = 15
-        elif self.r < 5000:
+        elif self.end - self.start < 5000:
             self.lives = 18
-        elif self.r < 10000:
+        elif self.end - self.start < 10000:
             self.lives = 20
   
         return self.lives
