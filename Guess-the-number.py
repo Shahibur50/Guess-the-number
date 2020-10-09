@@ -56,8 +56,7 @@ class Guess():
                 print("You are getting cold!\n")
             elif num > self.r:
                 print("You are getting hot!\n")
-            
-            
+
             
 if __name__ == "__main__":
     while True:
