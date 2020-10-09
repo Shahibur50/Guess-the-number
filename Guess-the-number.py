@@ -1,6 +1,6 @@
 '''
 Guess-the-number  Copyright (C) 2020  Shahibur Rahaman
-This program comes with ABSOLUTELY NO WARRANTY.
+Licensed under the MIT License.
 '''
 
 import random
