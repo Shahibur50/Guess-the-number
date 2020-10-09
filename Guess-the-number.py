@@ -1,4 +1,5 @@
-'''Guess-the-number  Copyright (C) 2020  Shahibur Rahaman
+'''
+Guess-the-number  Copyright (C) 2020  Shahibur Rahaman
 This program comes with ABSOLUTELY NO WARRANTY.
 '''
 
