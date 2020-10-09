@@ -10,8 +10,7 @@ def main():
     Guess().life()
     Guess().game()
 
-class Guess:
-
+class Guess():
     def __init__(self):
         self.start = start
         self.end = end
@@ -40,7 +39,6 @@ class Guess:
         for i in range(Guess().life()):
             lives = Guess().life() - i
             print(f"\nREMAINING LIVES: [{lives}]")
-
             while True:
                 try:
                     num = int(input("\nEnter your guess: "))
@@ -48,7 +46,6 @@ class Guess:
                     print("Please enter only numerical values.")
                 else:
                     break
-
             if num == self.r:
                 print("\nCongratulations! You have guessed the right number!\n")
                 break
