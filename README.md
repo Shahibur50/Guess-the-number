@@ -1,2 +1,2 @@
-# Guess-the-number.py
+# Guess-the-number
  A number guessing game made in python.
