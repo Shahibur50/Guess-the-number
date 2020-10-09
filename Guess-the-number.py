@@ -7,10 +7,9 @@ import random
 
 
 def main():
-    Guess().life()
     Guess().game()
 
-class Guess():
+class Guess:
     def __init__(self):
         self.start = start
         self.end = end
