@@ -1,7 +1,7 @@
-'''
+"""
 Guess the number  Copyright (C) 2020  Shahibur Rahaman
 Licensed under the MIT License.
-'''
+"""
 
 import random
 
@@ -9,12 +9,15 @@ import random
 def main():
     Guess().game()
 
+
 class Guess:
     def __init__(self):
         self.start = start
         self.end = end
         self.r = random.randint(start, end)
+        self.lives = 0
     
+    @property
     def life(self):
         if self.end - self.start < 30:
             self.lives = 3
@@ -31,12 +34,12 @@ class Guess:
         elif self.end - self.start < 5000:
             self.lives = 18
         elif self.end - self.start < 10000:
-            self.lives = 20  
+            self.lives = 20
         return self.lives
 
     def game(self):
-        for i in range(Guess().life()):
-            lives = Guess().life() - i
+        for i in range(Guess().life):
+            lives = Guess().life - i
             print(f"\nREMAINING LIVES: [{lives}]")
             while True:
                 try:
